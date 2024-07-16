@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "restriction-respawn-anchor-explosion",
+	"version": "${version}",
+	"name": "Restriction Respawn Anchor Explosion",
+	"description": "This mod prevents respawn anchors from exploding accidentally",
+	"authors": [
+		"Plastoid501"
+	],
+	"contact": {
+		"homepage": "https://github.com/Plastoid501/",
+		"sources": "https://github.com/Plastoid501/restriction-respawn-anchor-explosion"
+	},
+	"license": "MIT",
+	"icon": "assets/restriction-respawn-anchor-explosion/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.plastoid501.rrae.RestrictionRespawnAnchorExplosion"
+		]
+	},
+	"mixins": [
+		"restriction-respawn-anchor-explosion.mixins.json"
+	],
+	"depends": {
+		"minecraft": ">=1.21"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
