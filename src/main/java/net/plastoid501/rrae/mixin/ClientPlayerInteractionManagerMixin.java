@@ -34,10 +34,10 @@ public class ClientPlayerInteractionManagerMixin {
             return;
         }
         ItemStack itemStack = player.getStackInHand(hand);
-        if (hand == Hand.MAIN_HAND && !itemStack.isOf(Items.GLOWSTONE) && player.getStackInHand(Hand.OFF_HAND).isOf(Items.GLOWSTONE)) {
+        if (hand == Hand.MAIN_HAND && !(itemStack.getItem() == Items.GLOWSTONE) && player.getStackInHand(Hand.OFF_HAND).getItem() == Items.GLOWSTONE) {
             return;
         }
-        if (itemStack.isOf(Items.GLOWSTONE) && blockState.get(CHARGES) < 4) {
+        if (itemStack.getItem() == Items.GLOWSTONE && blockState.get(CHARGES) < 4) {
             return;
         }
         if (!((IDimensionTypeMixin) player.clientWorld.getDimension()).getRespawnAnchorWorks()) {

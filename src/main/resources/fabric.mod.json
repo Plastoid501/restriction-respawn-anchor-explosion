@@ -23,7 +23,7 @@
 		"restriction-respawn-anchor-explosion.mixins.json"
 	],
 	"depends": {
-		"minecraft": "1.18.x"
+		"minecraft": "1.16.x"
 	},
 	"suggests": {
 		"another-mod": "*"
