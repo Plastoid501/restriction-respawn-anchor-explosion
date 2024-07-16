@@ -3,7 +3,7 @@ package net.plastoid501.rrae;
 import net.fabricmc.api.ModInitializer;
 
 import org.apache.logging.log4j.LogManager;
-import org.slf4j.Logger;
+import org.apache.logging.log4j.Logger;
 
 public class RestrictionRespawnAnchorExplosion implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
