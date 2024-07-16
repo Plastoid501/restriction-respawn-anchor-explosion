@@ -17,6 +17,5 @@ public class RestrictionRespawnAnchorExplosion implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
 	}
 }
